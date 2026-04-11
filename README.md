@@ -1,6 +1,6 @@
 # Wordle
 
-A terminal-based Wordle clone —> guess a random 5-letter word in 6 tries. 
+A terminal-based Wordle clone -> guess a random 5-letter word in 6 tries. 
 Features color-coded feedback (green/yellow/grey), a positional hint, 
 word validation against a 5,757-word list, and a score system.
 
