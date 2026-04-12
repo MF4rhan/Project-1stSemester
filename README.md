@@ -5,7 +5,7 @@ Features color-coded feedback (green/yellow/grey), a positional hint,
 word validation against a 5,757-word list, and a score system.
 
 ## How to Run
-1. Compile: `gcc Wordle.cpp -o Wordle`
+1. Compile: `gcc Wordle.c -o Wordle`
 2. Make sure `WordsList.txt` is in the same directory
 3. Run: `Wordle.exe`
 
