@@ -1,7 +1,7 @@
 // This program is written for Windows, and will not work for linux out of the box.
 // To port to Linux:
 // 1. Remove <conio.h> (line 13)
-// 2. Replace system("cls") with system("clear") (line 126 & line 181)
+// 2. Replace system("cls") with system("clear") (line 141 & line 198)
 // 3. Remove system("color") (line 19), because ANSI colors work natively on Linux terminals
 
 #include <stdio.h>
@@ -10,13 +10,13 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-//#include <conio.h>
+#include <conio.h>
 
 // Score depends on tries taken to guess the word
 
 int main()
 {
-    //system("color");
+    system("color");
 
     struct Tile
     {
@@ -138,8 +138,8 @@ int main()
             }
             // The following section is for giving feedback to the player about their guesses
             // and printing the entire table
-            //system("cls");
-            system("clear");
+            system("cls");
+            //system("clear");
 
             for (int i = 0; i < guessCount + 1; i++)
             {
@@ -194,8 +194,8 @@ int main()
             printf("\nDo you want to play again? (1 = yes, 0 = no): ");
             scanf("%d", &userCh);
 
-            //system("cls");
-            system("clear");
+            system("cls");
+            //system("clear");
 
             if (userCh != 1 && userCh != 0)
             {
